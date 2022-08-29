@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="SimpleCPU_Template">
+		<CBX_INST_ENTRY INSTANCE_NAME="|SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0" CBX_FILE_NAME="altsyncram_bfo1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
