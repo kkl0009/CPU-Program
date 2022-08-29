@@ -1,0 +1,488 @@
+Simulator report for SimpleCPU_Template
+Tue Apr 28 11:24:03 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 10.0 us      ;
+; Simulation Netlist Size     ; 231 nodes    ;
+; Simulation Coverage         ;      61.20 % ;
+; Total Number of Transitions ; 1310         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                                    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Timing                                                                                                     ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                                       ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                                        ;               ;
+; Vector input source                                                                        ; C:/Users/kk_la/Desktop/College Stuff/SPRING 2020/CPE 271/CPE Labs/ACTUAL FINAL PROJECT/CPEFinalProject.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                                         ; On            ;
+; Check outputs                                                                              ; Off                                                                                                        ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                                         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                                         ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                                         ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                                         ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                                        ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                                        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                                        ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                                        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                                        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                                        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                                         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                                 ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                                        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                                        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                                       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++------------------------------------------------------------------------------------------------------+
+; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ALTSYNCRAM ;
++------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      61.20 % ;
+; Total nodes checked                                 ; 231          ;
+; Total output ports checked                          ; 250          ;
+; Total output ports with complete 1/0-value coverage ; 153          ;
+; Total output ports with no 1/0-value coverage       ; 64           ;
+; Total output ports with no 1-value coverage         ; 66           ;
+; Total output ports with no 0-value coverage         ; 95           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                        ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                              ; Output Port Name                                                                                       ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~0                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~0                                              ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~0                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~1                                              ; cout             ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~2                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~2                                              ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~0                                                                    ; |SimpleCPU_Template|alu:aluA|Add0~0                                                                    ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~4                                                                    ; |SimpleCPU_Template|alu:aluA|Add0~4                                                                    ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~4                                                                    ; |SimpleCPU_Template|alu:aluA|Add0~5                                                                    ; cout             ;
+; |SimpleCPU_Template|alu:aluA|Add0~8                                                                    ; |SimpleCPU_Template|alu:aluA|Add0~8                                                                    ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~8                                                                    ; |SimpleCPU_Template|alu:aluA|Add0~9                                                                    ; cout             ;
+; |SimpleCPU_Template|alu:aluA|Add0~12                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~12                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~12                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~13                                                                   ; cout             ;
+; |SimpleCPU_Template|alu:aluA|Add0~16                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~16                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~16                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~17                                                                   ; cout             ;
+; |SimpleCPU_Template|alu:aluA|Add0~20                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~20                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~20                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~21                                                                   ; cout             ;
+; |SimpleCPU_Template|alu:aluA|Add0~24                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~24                                                                   ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a0 ; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a0 ; portbdataout0    ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a0 ; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a1 ; portbdataout1    ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a0 ; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a2 ; portbdataout2    ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a0 ; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a3 ; portbdataout3    ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a0 ; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a4 ; portbdataout4    ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a0 ; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a5 ; portbdataout5    ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a0 ; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a6 ; portbdataout6    ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[0]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[0]                                           ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[1]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[1]                                           ; regout           ;
+; |SimpleCPU_Template|reg:MarA|output[0]                                                                 ; |SimpleCPU_Template|reg:MarA|output[0]                                                                 ; regout           ;
+; |SimpleCPU_Template|reg:MarA|output[1]                                                                 ; |SimpleCPU_Template|reg:MarA|output[1]                                                                 ; regout           ;
+; |SimpleCPU_Template|reg:MarA|output[2]                                                                 ; |SimpleCPU_Template|reg:MarA|output[2]                                                                 ; regout           ;
+; |SimpleCPU_Template|reg:MarA|output[3]                                                                 ; |SimpleCPU_Template|reg:MarA|output[3]                                                                 ; regout           ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[0]                                                 ; |SimpleCPU_Template|reg:InstructionRegisterA|output[0]                                                 ; regout           ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[1]                                                 ; |SimpleCPU_Template|reg:InstructionRegisterA|output[1]                                                 ; regout           ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[2]                                                 ; |SimpleCPU_Template|reg:InstructionRegisterA|output[2]                                                 ; regout           ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[5]                                                 ; |SimpleCPU_Template|reg:InstructionRegisterA|output[5]                                                 ; regout           ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[6]                                                 ; |SimpleCPU_Template|reg:InstructionRegisterA|output[6]                                                 ; regout           ;
+; |SimpleCPU_Template|reg:MdriA|output[0]                                                                ; |SimpleCPU_Template|reg:MdriA|output[0]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdriA|output[1]                                                                ; |SimpleCPU_Template|reg:MdriA|output[1]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdriA|output[2]                                                                ; |SimpleCPU_Template|reg:MdriA|output[2]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdriA|output[3]                                                                ; |SimpleCPU_Template|reg:MdriA|output[3]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdriA|output[4]                                                                ; |SimpleCPU_Template|reg:MdriA|output[4]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdriA|output[5]                                                                ; |SimpleCPU_Template|reg:MdriA|output[5]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdriA|output[6]                                                                ; |SimpleCPU_Template|reg:MdriA|output[6]                                                                ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.increment_pc                                ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.increment_pc                                ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.ldaa_load_mar                               ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.ldaa_load_mar                               ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.adaa_load_mar                               ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.adaa_load_mar                               ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.staa_load_mdro                              ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.staa_load_mdro                              ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr1~0                                                 ; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr1~0                                                 ; combout          ;
+; |SimpleCPU_Template|TwoToOneMux:MuxA|output[0]~0                                                       ; |SimpleCPU_Template|TwoToOneMux:MuxA|output[0]~0                                                       ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_mar                                    ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_mar                                    ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr2                                                   ; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr2                                                   ; combout          ;
+; |SimpleCPU_Template|TwoToOneMux:MuxA|output[1]~1                                                       ; |SimpleCPU_Template|TwoToOneMux:MuxA|output[1]~1                                                       ; combout          ;
+; |SimpleCPU_Template|TwoToOneMux:MuxA|output[2]~2                                                       ; |SimpleCPU_Template|TwoToOneMux:MuxA|output[2]~2                                                       ; combout          ;
+; |SimpleCPU_Template|TwoToOneMux:MuxA|output[3]~3                                                       ; |SimpleCPU_Template|TwoToOneMux:MuxA|output[3]~3                                                       ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_ir                                     ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_ir                                     ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[0]                                                    ; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[0]                                                    ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_mdri                                   ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_mdri                                   ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.ldaa_load_mdri                              ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.ldaa_load_mdri                              ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.adaa_load_mdri                              ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.adaa_load_mdri                              ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr3~0                                                 ; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr3~0                                                 ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[1]                                                    ; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[1]                                                    ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[2]                                                    ; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[2]                                                    ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[3]                                                    ; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[3]                                                    ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[4]                                                    ; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[4]                                                    ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[5]                                                    ; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[5]                                                    ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[6]                                                    ; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[6]                                                    ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.ldaa_load_a                                 ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.ldaa_load_a                                 ; regout           ;
+; |SimpleCPU_Template|alu:aluA|Add0~2                                                                    ; |SimpleCPU_Template|alu:aluA|Add0~2                                                                    ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~3                                                                    ; |SimpleCPU_Template|alu:aluA|Add0~3                                                                    ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~6                                                                    ; |SimpleCPU_Template|alu:aluA|Add0~6                                                                    ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~7                                                                    ; |SimpleCPU_Template|alu:aluA|Add0~7                                                                    ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~10                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~10                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~11                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~11                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~14                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~14                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~15                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~15                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~18                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~18                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~19                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~19                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~22                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~22                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~23                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~23                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~26                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~26                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~27                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~27                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~30                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~30                                                                   ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~31                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~31                                                                   ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.adaa_store_load_a                           ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.adaa_store_load_a                           ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr0~0                                                 ; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr0~0                                                 ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.staa_write_mem                              ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.staa_write_mem                              ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr0                                                   ; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr0                                                   ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.decode                                      ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.decode                                      ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state~19                                          ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state~19                                          ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state~20                                          ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state~20                                          ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state~21                                          ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state~21                                          ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[3]                                              ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[3]                                              ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[1]                                              ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[1]                                              ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~14                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~14                                                           ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[7]                                              ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[7]                                              ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[5]                                              ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[5]                                              ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~15                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~15                                                           ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[0]                                              ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[0]                                              ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~16                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~16                                                           ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z                                                              ; |SimpleCPU_Template|memory_8_by_32:ramA|Z                                                              ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~17                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~17                                                           ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.read_mem                                    ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.read_mem                                    ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.ldaa_read_mem                               ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.ldaa_read_mem                               ; regout           ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.adaa_read_mem                               ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.adaa_read_mem                               ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~18                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~18                                                           ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[15]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[15]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~19                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~19                                                           ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~20                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~20                                                           ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~21                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~21                                                           ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~22                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~22                                                           ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~23                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~23                                                           ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[0]~0                                         ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[0]~0                                         ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_mar~0                                  ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_mar~0                                  ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.read_mem~0                                  ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.read_mem~0                                  ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr2~_wirecell                                         ; |SimpleCPU_Template|ControlUnit:ControlUnitA|WideOr2~_wirecell                                         ; combout          ;
+; |SimpleCPU_Template|pcOut[0]                                                                           ; |SimpleCPU_Template|pcOut[0]                                                                           ; padio            ;
+; |SimpleCPU_Template|pcOut[1]                                                                           ; |SimpleCPU_Template|pcOut[1]                                                                           ; padio            ;
+; |SimpleCPU_Template|marOut[0]                                                                          ; |SimpleCPU_Template|marOut[0]                                                                          ; padio            ;
+; |SimpleCPU_Template|marOut[1]                                                                          ; |SimpleCPU_Template|marOut[1]                                                                          ; padio            ;
+; |SimpleCPU_Template|marOut[2]                                                                          ; |SimpleCPU_Template|marOut[2]                                                                          ; padio            ;
+; |SimpleCPU_Template|marOut[3]                                                                          ; |SimpleCPU_Template|marOut[3]                                                                          ; padio            ;
+; |SimpleCPU_Template|irOutput[0]                                                                        ; |SimpleCPU_Template|irOutput[0]                                                                        ; padio            ;
+; |SimpleCPU_Template|irOutput[1]                                                                        ; |SimpleCPU_Template|irOutput[1]                                                                        ; padio            ;
+; |SimpleCPU_Template|irOutput[2]                                                                        ; |SimpleCPU_Template|irOutput[2]                                                                        ; padio            ;
+; |SimpleCPU_Template|irOutput[5]                                                                        ; |SimpleCPU_Template|irOutput[5]                                                                        ; padio            ;
+; |SimpleCPU_Template|irOutput[6]                                                                        ; |SimpleCPU_Template|irOutput[6]                                                                        ; padio            ;
+; |SimpleCPU_Template|mdriOutput[0]                                                                      ; |SimpleCPU_Template|mdriOutput[0]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdriOutput[1]                                                                      ; |SimpleCPU_Template|mdriOutput[1]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdriOutput[2]                                                                      ; |SimpleCPU_Template|mdriOutput[2]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdriOutput[3]                                                                      ; |SimpleCPU_Template|mdriOutput[3]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdriOutput[4]                                                                      ; |SimpleCPU_Template|mdriOutput[4]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdriOutput[5]                                                                      ; |SimpleCPU_Template|mdriOutput[5]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdriOutput[6]                                                                      ; |SimpleCPU_Template|mdriOutput[6]                                                                      ; padio            ;
+; |SimpleCPU_Template|incrementOut                                                                       ; |SimpleCPU_Template|incrementOut                                                                       ; padio            ;
+; |SimpleCPU_Template|clk                                                                                ; |SimpleCPU_Template|clk~corein                                                                         ; combout          ;
+; |SimpleCPU_Template|clk~clkctrl                                                                        ; |SimpleCPU_Template|clk~clkctrl                                                                        ; outclk           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[3]~feeder                                       ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[3]~feeder                                       ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[7]~feeder                                       ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[7]~feeder                                       ; combout          ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[0]~feeder                                          ; |SimpleCPU_Template|reg:InstructionRegisterA|output[0]~feeder                                          ; combout          ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[1]~feeder                                          ; |SimpleCPU_Template|reg:InstructionRegisterA|output[1]~feeder                                          ; combout          ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[2]~feeder                                          ; |SimpleCPU_Template|reg:InstructionRegisterA|output[2]~feeder                                          ; combout          ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[3]~feeder                                          ; |SimpleCPU_Template|reg:InstructionRegisterA|output[3]~feeder                                          ; combout          ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[4]~feeder                                          ; |SimpleCPU_Template|reg:InstructionRegisterA|output[4]~feeder                                          ; combout          ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[5]~feeder                                          ; |SimpleCPU_Template|reg:InstructionRegisterA|output[5]~feeder                                          ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.ldaa_read_mem~feeder                        ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.ldaa_read_mem~feeder                        ; combout          ;
+; |SimpleCPU_Template|reg:MarA|output[0]~feeder                                                          ; |SimpleCPU_Template|reg:MarA|output[0]~feeder                                                          ; combout          ;
+; |SimpleCPU_Template|reg:MarA|output[3]~feeder                                                          ; |SimpleCPU_Template|reg:MarA|output[3]~feeder                                                          ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_ir~feeder                              ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_ir~feeder                              ; combout          ;
+; |SimpleCPU_Template|reg:MdroA|output[0]~feeder                                                         ; |SimpleCPU_Template|reg:MdroA|output[0]~feeder                                                         ; combout          ;
+; |SimpleCPU_Template|reg:MdroA|output[1]~feeder                                                         ; |SimpleCPU_Template|reg:MdroA|output[1]~feeder                                                         ; combout          ;
+; |SimpleCPU_Template|reg:MdroA|output[2]~feeder                                                         ; |SimpleCPU_Template|reg:MdroA|output[2]~feeder                                                         ; combout          ;
+; |SimpleCPU_Template|reg:MdroA|output[3]~feeder                                                         ; |SimpleCPU_Template|reg:MdroA|output[3]~feeder                                                         ; combout          ;
+; |SimpleCPU_Template|reg:MdroA|output[4]~feeder                                                         ; |SimpleCPU_Template|reg:MdroA|output[4]~feeder                                                         ; combout          ;
+; |SimpleCPU_Template|reg:MdroA|output[5]~feeder                                                         ; |SimpleCPU_Template|reg:MdroA|output[5]~feeder                                                         ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[0]~feeder                                       ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[0]~feeder                                       ; combout          ;
+; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_mdri~feeder                            ; |SimpleCPU_Template|ControlUnit:ControlUnitA|current_state.load_mdri~feeder                            ; combout          ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                              ; Output Port Name                                                                                       ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~2                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~3                                              ; cout             ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~4                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~4                                              ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~4                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~5                                              ; cout             ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~6                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~6                                              ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~6                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~7                                              ; cout             ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~8                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~8                                              ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~8                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~9                                              ; cout             ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~10                                             ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~10                                             ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~10                                             ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~11                                             ; cout             ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~12                                             ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~12                                             ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~24                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~25                                                                   ; cout             ;
+; |SimpleCPU_Template|alu:aluA|Add0~28                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~28                                                                   ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a0 ; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a7 ; portbdataout7    ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[3]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[3]                                           ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[4]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[4]                                           ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[5]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[5]                                           ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[6]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[6]                                           ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[7]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[7]                                           ; regout           ;
+; |SimpleCPU_Template|reg:MarA|output[4]                                                                 ; |SimpleCPU_Template|reg:MarA|output[4]                                                                 ; regout           ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[4]                                                 ; |SimpleCPU_Template|reg:InstructionRegisterA|output[4]                                                 ; regout           ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[7]                                                 ; |SimpleCPU_Template|reg:InstructionRegisterA|output[7]                                                 ; regout           ;
+; |SimpleCPU_Template|reg:MdriA|output[7]                                                                ; |SimpleCPU_Template|reg:MdriA|output[7]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[0]                                                                ; |SimpleCPU_Template|reg:MdroA|output[0]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[5]                                                                ; |SimpleCPU_Template|reg:MdroA|output[5]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[6]                                                                ; |SimpleCPU_Template|reg:MdroA|output[6]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[7]                                                                ; |SimpleCPU_Template|reg:MdroA|output[7]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:accumA|output[5]                                                               ; |SimpleCPU_Template|reg:accumA|output[5]                                                               ; regout           ;
+; |SimpleCPU_Template|reg:accumA|output[6]                                                               ; |SimpleCPU_Template|reg:accumA|output[6]                                                               ; regout           ;
+; |SimpleCPU_Template|reg:accumA|output[7]                                                               ; |SimpleCPU_Template|reg:accumA|output[7]                                                               ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[5]                                          ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[5]                                          ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[6]                                          ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[6]                                          ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[7]                                          ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[7]                                          ; regout           ;
+; |SimpleCPU_Template|TwoToOneMux:MuxA|output[4]~4                                                       ; |SimpleCPU_Template|TwoToOneMux:MuxA|output[4]~4                                                       ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[7]                                                    ; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[7]                                                    ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[9]                                              ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[9]                                              ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[21]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[21]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[23]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[23]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[25]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[25]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~24                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~24                                                           ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[11]~0                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[11]~0                                           ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[15]~1                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[15]~1                                           ; combout          ;
+; |SimpleCPU_Template|pcOut[3]                                                                           ; |SimpleCPU_Template|pcOut[3]                                                                           ; padio            ;
+; |SimpleCPU_Template|pcOut[4]                                                                           ; |SimpleCPU_Template|pcOut[4]                                                                           ; padio            ;
+; |SimpleCPU_Template|pcOut[5]                                                                           ; |SimpleCPU_Template|pcOut[5]                                                                           ; padio            ;
+; |SimpleCPU_Template|pcOut[6]                                                                           ; |SimpleCPU_Template|pcOut[6]                                                                           ; padio            ;
+; |SimpleCPU_Template|pcOut[7]                                                                           ; |SimpleCPU_Template|pcOut[7]                                                                           ; padio            ;
+; |SimpleCPU_Template|marOut[4]                                                                          ; |SimpleCPU_Template|marOut[4]                                                                          ; padio            ;
+; |SimpleCPU_Template|marOut[5]                                                                          ; |SimpleCPU_Template|marOut[5]                                                                          ; padio            ;
+; |SimpleCPU_Template|marOut[6]                                                                          ; |SimpleCPU_Template|marOut[6]                                                                          ; padio            ;
+; |SimpleCPU_Template|marOut[7]                                                                          ; |SimpleCPU_Template|marOut[7]                                                                          ; padio            ;
+; |SimpleCPU_Template|irOutput[4]                                                                        ; |SimpleCPU_Template|irOutput[4]                                                                        ; padio            ;
+; |SimpleCPU_Template|irOutput[7]                                                                        ; |SimpleCPU_Template|irOutput[7]                                                                        ; padio            ;
+; |SimpleCPU_Template|mdriOutput[7]                                                                      ; |SimpleCPU_Template|mdriOutput[7]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[0]                                                                      ; |SimpleCPU_Template|mdroOutput[0]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[5]                                                                      ; |SimpleCPU_Template|mdroOutput[5]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[6]                                                                      ; |SimpleCPU_Template|mdroOutput[6]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[7]                                                                      ; |SimpleCPU_Template|mdroOutput[7]                                                                      ; padio            ;
+; |SimpleCPU_Template|aOut[5]                                                                            ; |SimpleCPU_Template|aOut[5]                                                                            ; padio            ;
+; |SimpleCPU_Template|aOut[6]                                                                            ; |SimpleCPU_Template|aOut[6]                                                                            ; padio            ;
+; |SimpleCPU_Template|aOut[7]                                                                            ; |SimpleCPU_Template|aOut[7]                                                                            ; padio            ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[6]~feeder                                    ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[6]~feeder                                    ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[7]~feeder                                    ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[7]~feeder                                    ; combout          ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[7]~feeder                                          ; |SimpleCPU_Template|reg:InstructionRegisterA|output[7]~feeder                                          ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[25]~feeder                                      ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[25]~feeder                                      ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[15]~feeder                                      ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[15]~feeder                                      ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[12]~feeder                                      ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[12]~feeder                                      ; combout          ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                              ; Output Port Name                                                                                       ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~2                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~3                                              ; cout             ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~4                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~4                                              ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~4                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~5                                              ; cout             ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~6                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~6                                              ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~6                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~7                                              ; cout             ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~8                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~8                                              ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~8                                              ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~9                                              ; cout             ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~10                                             ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~10                                             ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~10                                             ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~11                                             ; cout             ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~12                                             ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|Add0~12                                             ; combout          ;
+; |SimpleCPU_Template|alu:aluA|Add0~0                                                                    ; |SimpleCPU_Template|alu:aluA|Add0~1                                                                    ; cout             ;
+; |SimpleCPU_Template|alu:aluA|Add0~24                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~25                                                                   ; cout             ;
+; |SimpleCPU_Template|alu:aluA|Add0~28                                                                   ; |SimpleCPU_Template|alu:aluA|Add0~28                                                                   ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a0 ; |SimpleCPU_Template|memory_8_by_32:ramA|altsyncram:Z_rtl_0|altsyncram_bfo1:auto_generated|ram_block1a7 ; portbdataout7    ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[2]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[2]                                           ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[3]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[3]                                           ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[4]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[4]                                           ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[5]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[5]                                           ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[6]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[6]                                           ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[7]                                           ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[7]                                           ; regout           ;
+; |SimpleCPU_Template|reg:MarA|output[4]                                                                 ; |SimpleCPU_Template|reg:MarA|output[4]                                                                 ; regout           ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[3]                                                 ; |SimpleCPU_Template|reg:InstructionRegisterA|output[3]                                                 ; regout           ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[4]                                                 ; |SimpleCPU_Template|reg:InstructionRegisterA|output[4]                                                 ; regout           ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[7]                                                 ; |SimpleCPU_Template|reg:InstructionRegisterA|output[7]                                                 ; regout           ;
+; |SimpleCPU_Template|reg:MdriA|output[7]                                                                ; |SimpleCPU_Template|reg:MdriA|output[7]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[0]                                                                ; |SimpleCPU_Template|reg:MdroA|output[0]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[1]                                                                ; |SimpleCPU_Template|reg:MdroA|output[1]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[2]                                                                ; |SimpleCPU_Template|reg:MdroA|output[2]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[3]                                                                ; |SimpleCPU_Template|reg:MdroA|output[3]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[4]                                                                ; |SimpleCPU_Template|reg:MdroA|output[4]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[5]                                                                ; |SimpleCPU_Template|reg:MdroA|output[5]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[6]                                                                ; |SimpleCPU_Template|reg:MdroA|output[6]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:MdroA|output[7]                                                                ; |SimpleCPU_Template|reg:MdroA|output[7]                                                                ; regout           ;
+; |SimpleCPU_Template|reg:accumA|output[0]                                                               ; |SimpleCPU_Template|reg:accumA|output[0]                                                               ; regout           ;
+; |SimpleCPU_Template|reg:accumA|output[1]                                                               ; |SimpleCPU_Template|reg:accumA|output[1]                                                               ; regout           ;
+; |SimpleCPU_Template|reg:accumA|output[2]                                                               ; |SimpleCPU_Template|reg:accumA|output[2]                                                               ; regout           ;
+; |SimpleCPU_Template|reg:accumA|output[3]                                                               ; |SimpleCPU_Template|reg:accumA|output[3]                                                               ; regout           ;
+; |SimpleCPU_Template|reg:accumA|output[4]                                                               ; |SimpleCPU_Template|reg:accumA|output[4]                                                               ; regout           ;
+; |SimpleCPU_Template|reg:accumA|output[5]                                                               ; |SimpleCPU_Template|reg:accumA|output[5]                                                               ; regout           ;
+; |SimpleCPU_Template|reg:accumA|output[6]                                                               ; |SimpleCPU_Template|reg:accumA|output[6]                                                               ; regout           ;
+; |SimpleCPU_Template|reg:accumA|output[7]                                                               ; |SimpleCPU_Template|reg:accumA|output[7]                                                               ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[5]                                          ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[5]                                          ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[6]                                          ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[6]                                          ; regout           ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[7]                                          ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|counter[7]                                          ; regout           ;
+; |SimpleCPU_Template|TwoToOneMux:MuxA|output[4]~4                                                       ; |SimpleCPU_Template|TwoToOneMux:MuxA|output[4]~4                                                       ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[7]                                                    ; |SimpleCPU_Template|memory_8_by_32:ramA|Data_out[7]                                                    ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[9]                                              ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[9]                                              ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[12]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[12]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[11]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[11]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[13]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[13]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[17]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[17]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[19]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[19]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[21]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[21]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[23]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[23]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[25]                                             ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[25]                                             ; regout           ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z~24                                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z~24                                                           ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[11]~0                                           ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[11]~0                                           ; combout          ;
+; |SimpleCPU_Template|pcOut[2]                                                                           ; |SimpleCPU_Template|pcOut[2]                                                                           ; padio            ;
+; |SimpleCPU_Template|pcOut[3]                                                                           ; |SimpleCPU_Template|pcOut[3]                                                                           ; padio            ;
+; |SimpleCPU_Template|pcOut[4]                                                                           ; |SimpleCPU_Template|pcOut[4]                                                                           ; padio            ;
+; |SimpleCPU_Template|pcOut[5]                                                                           ; |SimpleCPU_Template|pcOut[5]                                                                           ; padio            ;
+; |SimpleCPU_Template|pcOut[6]                                                                           ; |SimpleCPU_Template|pcOut[6]                                                                           ; padio            ;
+; |SimpleCPU_Template|pcOut[7]                                                                           ; |SimpleCPU_Template|pcOut[7]                                                                           ; padio            ;
+; |SimpleCPU_Template|marOut[4]                                                                          ; |SimpleCPU_Template|marOut[4]                                                                          ; padio            ;
+; |SimpleCPU_Template|marOut[5]                                                                          ; |SimpleCPU_Template|marOut[5]                                                                          ; padio            ;
+; |SimpleCPU_Template|marOut[6]                                                                          ; |SimpleCPU_Template|marOut[6]                                                                          ; padio            ;
+; |SimpleCPU_Template|marOut[7]                                                                          ; |SimpleCPU_Template|marOut[7]                                                                          ; padio            ;
+; |SimpleCPU_Template|irOutput[3]                                                                        ; |SimpleCPU_Template|irOutput[3]                                                                        ; padio            ;
+; |SimpleCPU_Template|irOutput[4]                                                                        ; |SimpleCPU_Template|irOutput[4]                                                                        ; padio            ;
+; |SimpleCPU_Template|irOutput[7]                                                                        ; |SimpleCPU_Template|irOutput[7]                                                                        ; padio            ;
+; |SimpleCPU_Template|mdriOutput[7]                                                                      ; |SimpleCPU_Template|mdriOutput[7]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[0]                                                                      ; |SimpleCPU_Template|mdroOutput[0]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[1]                                                                      ; |SimpleCPU_Template|mdroOutput[1]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[2]                                                                      ; |SimpleCPU_Template|mdroOutput[2]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[3]                                                                      ; |SimpleCPU_Template|mdroOutput[3]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[4]                                                                      ; |SimpleCPU_Template|mdroOutput[4]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[5]                                                                      ; |SimpleCPU_Template|mdroOutput[5]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[6]                                                                      ; |SimpleCPU_Template|mdroOutput[6]                                                                      ; padio            ;
+; |SimpleCPU_Template|mdroOutput[7]                                                                      ; |SimpleCPU_Template|mdroOutput[7]                                                                      ; padio            ;
+; |SimpleCPU_Template|aOut[0]                                                                            ; |SimpleCPU_Template|aOut[0]                                                                            ; padio            ;
+; |SimpleCPU_Template|aOut[1]                                                                            ; |SimpleCPU_Template|aOut[1]                                                                            ; padio            ;
+; |SimpleCPU_Template|aOut[2]                                                                            ; |SimpleCPU_Template|aOut[2]                                                                            ; padio            ;
+; |SimpleCPU_Template|aOut[3]                                                                            ; |SimpleCPU_Template|aOut[3]                                                                            ; padio            ;
+; |SimpleCPU_Template|aOut[4]                                                                            ; |SimpleCPU_Template|aOut[4]                                                                            ; padio            ;
+; |SimpleCPU_Template|aOut[5]                                                                            ; |SimpleCPU_Template|aOut[5]                                                                            ; padio            ;
+; |SimpleCPU_Template|aOut[6]                                                                            ; |SimpleCPU_Template|aOut[6]                                                                            ; padio            ;
+; |SimpleCPU_Template|aOut[7]                                                                            ; |SimpleCPU_Template|aOut[7]                                                                            ; padio            ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[6]~feeder                                    ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[6]~feeder                                    ; combout          ;
+; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[7]~feeder                                    ; |SimpleCPU_Template|ProgramCounter:ProgramCounterA|output[7]~feeder                                    ; combout          ;
+; |SimpleCPU_Template|reg:InstructionRegisterA|output[7]~feeder                                          ; |SimpleCPU_Template|reg:InstructionRegisterA|output[7]~feeder                                          ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[13]~feeder                                      ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[13]~feeder                                      ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[17]~feeder                                      ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[17]~feeder                                      ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[19]~feeder                                      ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[19]~feeder                                      ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[25]~feeder                                      ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[25]~feeder                                      ; combout          ;
+; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[12]~feeder                                      ; |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[12]~feeder                                      ; combout          ;
++--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Apr 28 11:24:03 2020
+Info: Command: quartus_sim --simulation_results_format=VWF SimpleCPU_Template -c SimpleCPU_Template
+Info (324025): Using vector source file "C:/Users/kk_la/Desktop/College Stuff/SPRING 2020/CPE 271/CPE Labs/ACTUAL FINAL PROJECT/CPEFinalProject.vwf"
+Info (328054): Inverted registers were found during simulation
+    Info (328055): Register: |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[12]
+    Info (328055): Register: |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[11]
+    Info (328055): Register: |SimpleCPU_Template|memory_8_by_32:ramA|Z_rtl_0_bypass[15]
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      61.20 %
+Info (328052): Number of transitions in simulation is 1310
+Info (324045): Vector file SimpleCPU_Template.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4482 megabytes
+    Info: Processing ended: Tue Apr 28 11:24:03 2020
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
